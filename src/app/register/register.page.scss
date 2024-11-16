@@ -1,11 +1,79 @@
-.register-container { 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100%; 
-  } 
-   
-  .login-link { 
-    text-align: center; 
-    margin-top: 10px; 
-  }
+
+/* Fondo general con un verde claro */
+.green-theme {
+  --background: #eaf7ea; /* Verde claro para el fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Contenedor principal */
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+}
+
+/* Tarjeta de registro */
+.register-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Encabezado de la tarjeta */
+ion-card-title {
+  color: #2c5f2d; /* Verde oscuro */
+  font-size: 1.6rem;
+}
+
+ion-card-subtitle {
+  color: #546e54; /* Verde más suave */
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Campos de entrada */
+.input-item {
+  background-color: #f5fbf5; /* Verde pálido */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 5px;
+  --highlight-color-focused: #2c5f2d; /* Verde oscuro */
+}
+
+/* Botón de registro */
+.register-button {
+  margin-top: 20px;
+  background-color: #27ae60; /* Verde brillante */
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #1e8f50; /* Verde más oscuro */
+}
+
+/* Enlace de inicio de sesión */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #2c5f2d; /* Verde oscuro */
+}
+
+.login-link a {
+  color: #2c5f2d; /* Verde oscuro */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

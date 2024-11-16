@@ -1,0 +1,85 @@
+
+  /* Estilos generales del contenido */
+  ion-content {
+    --background: #f4f4f9; /* Fondo gris claro con un toque de azul */
+    padding: 20px;
+  }
+
+  /* Estilos del encabezado */
+  ion-header {
+    --background: #1abc9c; /* Fondo verde claro */
+    --color: white;
+  }
+
+  ion-toolbar {
+    --background: #1abc9c; /* Fondo verde */
+    border-bottom: 2px solid #16a085; /* Borde inferior más oscuro para el toolbar */
+  }
+
+  ion-title {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Estilo para la lista */
+  ion-list {
+    width: 100%;
+  }
+
+  /* Estilo para los elementos de la lista */
+  ion-item {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+  }
+
+  ion-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilos para los textos */
+  ion-text h3 {
+    font-size: 2rem;
+    color: #1abc9c; /* Verde brillante */
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  ion-label {
+    font-size: 1.2rem;
+    color: #34495e; /* Gris oscuro */
+    font-family: 'Roboto', sans-serif;
+  }
+
+  ion-note {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #16a085; /* Verde más oscuro */
+  }
+
+  /* Estilo para el título de la tabla */
+  ion-label strong {
+    color: #1abc9c; /* Verde brillante */
+    font-weight: bold;
+  }
+
+  /* Animación de desvanecimiento para los textos */
+  ion-text {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

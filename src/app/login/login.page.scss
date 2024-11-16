@@ -1,11 +1,68 @@
-.login-container { 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100%; 
-  } 
-   
-  .register-link { 
-    text-align: center; 
-    margin-top: 10px; 
-  }
+
+/* Fondo general con tema verde */
+.green-theme {
+  --background: #e9f9e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Contenedor principal */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+}
+
+/* Tarjeta de inicio de sesión */
+.login-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Encabezado de la tarjeta */
+ion-card-title {
+  color: #2d7d46;
+  font-size: 1.5rem;
+}
+
+ion-card-subtitle {
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+/* Campos de entrada */
+.input-item {
+  background-color: #f0f9f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 5px;
+  --highlight-color-focused: #2d7d46;
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/* Enlace de registro */
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #2d7d46;
+}
+
+.register-link a {
+  color: #2d7d46;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,58 @@
+/* Fondo estilizado */
+.styled-content {
+    --background: #f4f4f9;
+  }
+  
+  /* Contenedor del juego */
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Estilo para la tarjeta del juego */
+  .game-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .game-title {
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  /* Estilo para los inputs */
+  .input-item {
+    margin: 10px 0;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  /* Botones estilizados */
+  .styled-button {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para la tarjeta del mensaje */
+  .message-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+  }
