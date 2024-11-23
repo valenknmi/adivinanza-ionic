@@ -1,6 +1,5 @@
 <ion-content class="green-theme">
   <div class="login-container">
-    <!-- Tarjeta de inicio de sesión -->
     <ion-card class="login-card" mode="ios">
       <ion-card-header class="ion-text-center">
         <ion-card-title>Bienvenido</ion-card-title>
@@ -26,12 +25,15 @@
             (click)="onClickIngresar(frmLogin)" 
             expand="block" 
             color="success" 
-            class="login-button">
+            class="login-button" 
+            [disabled]="isLoading">
             Ingresar
           </ion-button>
+
+          <!-- Spinner de carga -->
+          <ion-spinner *ngIf="isLoading" name="dots"></ion-spinner>
         </form>
 
-        <!-- Enlace para registrarse -->
         <div class="register-link">
           <ion-label>¿No tienes cuenta? 
             <a routerLink="/register">Regístrate aquí</a>
@@ -41,8 +43,3 @@
     </ion-card>
   </div>
 </ion-content>
-
-
-
-
-

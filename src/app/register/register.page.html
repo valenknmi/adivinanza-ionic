@@ -8,30 +8,40 @@
       </ion-card-header>
 
       <ion-card-content>
-        <form #frmRegistro="ngForm">
+        <form #frmRegistro="ngForm" (ngSubmit)="onClickRegistrar(frmRegistro)">
           <!-- Campo de Usuario -->
-          <ion-item class="input-item">
+          <ion-item class="input-item" [class.invalid]="usuarioInvalid(frmRegistro)">
             <ion-label position="floating">Usuario</ion-label>
             <ion-input [(ngModel)]="usuario" type="text" name="username" required></ion-input>
           </ion-item>
+          <ion-text color="danger" *ngIf="usuarioInvalid(frmRegistro)">
+            <p>El campo de usuario es obligatorio</p>
+          </ion-text>
 
           <!-- Campo de Correo -->
-          <ion-item class="input-item">
+          <ion-item class="input-item" [class.invalid]="correoInvalid(frmRegistro)">
             <ion-label position="floating">Correo</ion-label>
-            <ion-input [(ngModel)]="correo" type="email" name="email" required></ion-input>
+            <ion-input [(ngModel)]="correo" type="email" name="email" required email></ion-input>
           </ion-item>
+          <ion-text color="danger" *ngIf="correoInvalid(frmRegistro)">
+            <p>El correo es obligatorio y debe ser válido</p>
+          </ion-text>
 
           <!-- Campo de Contraseña -->
-          <ion-item class="input-item">
+          <ion-item class="input-item" [class.invalid]="passwordInvalid(frmRegistro)">
             <ion-label position="floating">Contraseña</ion-label>
             <ion-input [(ngModel)]="password" type="password" name="password" required></ion-input>
           </ion-item>
+          <ion-text color="danger" *ngIf="passwordInvalid(frmRegistro)">
+            <p>La contraseña es obligatoria</p>
+          </ion-text>
 
           <!-- Botón de Registro -->
           <ion-button 
-            (click)="onClickRegistrar(frmRegistro)" 
+            type="submit" 
             expand="block" 
-            class="register-button">
+            class="register-button"
+            [disabled]="frmRegistro.invalid">
             Registrarse
           </ion-button>
         </form>  
@@ -46,4 +56,3 @@
     </ion-card>
   </div>
 </ion-content>
-
